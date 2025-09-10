@@ -1,0 +1,29 @@
+
+function App() {
+  const number = 10;
+  const name = "Sajin Kumar"
+  const arr = [
+    {name : "Sajin"},
+    {name : "Rupak"},
+    {name : "Nithish"}
+  ]
+  const userStatus = true;
+  
+  return (
+    <div className="container">
+      <h1>Sajin</h1>
+      <p>{arr[0].name}</p>
+      <h2>{userStatus?"Correct":"Wrong"}</h2>
+      <ul>
+        {
+          arr.map((name,index) => (
+            <li key={index}>{name.name} {index}</li>
+          ))
+        }
+      </ul>
+    </div>
+    
+  )
+}
+
+export default App

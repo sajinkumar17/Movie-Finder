@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epunda Sans", sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+
+header{
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: #cdcdcd;
+}
+
+.card{
+    background-color: white;
+    color: black;
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card.reverse{
+    background-color: black;
+    color: white;
+}
+
+.delete{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer ;
+}
+.edit{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    cursor: pointer ;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+form{
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.input-group>input{
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.btn{
+    color: white;
+    padding: 15px 50px;
+    border-radius: 15px;
+}
+
+.btn-primary{
+    background-color: green;
+}
+
+.btn-secondary{
+    background-color: orange;
+}
+
+.btn:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.error{
+    color: red;
+}
+
+.no-item{
+    text-align: center;
+}
+
+.length{
+    margin: 20px ;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+}
