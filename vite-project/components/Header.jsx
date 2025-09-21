@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import ThemeButton from "./shared/ThemeButton";
 import FeedbackTheme from "./context/FeedbackTheme";
+import { Link } from "react-router-dom";
+
 
 const Header = ({ text }) => {
   const { theme } = useContext(FeedbackTheme);
@@ -13,7 +15,10 @@ const Header = ({ text }) => {
   return (
     <header style={headerStyle}>
       <div className="container">
-        <h2>{text}</h2>
+        <div>
+          <Link to="/"><h2>{text}</h2></Link>
+          <Link to="/about">About Us</Link>
+        </div>
       </div>
       <ThemeButton />
     </header>

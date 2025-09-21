@@ -18,6 +18,22 @@ header{
     margin-bottom: 30px;
 }
 
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+header > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: rgb(255, 38, 0);
+    text-decoration: none;
+}
+
 body{
     background-color: #cdcdcd;
 }
@@ -111,4 +127,7 @@ button:hover{
 
 header{
     display: flex;
+}
+.about :where(h1,p,a){
+    margin-bottom: 20px;
 }
